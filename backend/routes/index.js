@@ -1,2 +1,2 @@
-module.exports.talker = require('./talker.route');
+module.exports.people = require('./people.route');
 module.exports.login = require('./login.route');

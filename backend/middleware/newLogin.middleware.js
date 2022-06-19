@@ -1,5 +1,5 @@
 const { token } = require('../utils');
-const { emailVerify, passwordVerify } = require('../validation');
+const { emailVerify, passwordVerify } = require('../validations');
 
 const OK = 200;
 const BAD = 400;

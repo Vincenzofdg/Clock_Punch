@@ -1,6 +1,6 @@
 const { readFile } = require('fs/promises');
 
-const FILE = './talker.json';
+const FILE = './seed.json';
 const OK = 200;
 
 module.exports = async (req, res) => {

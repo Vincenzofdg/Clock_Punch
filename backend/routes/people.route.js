@@ -10,7 +10,7 @@ const {
   rateVerify: rate,
   tokenVerify: token,
   searchTermVerify: searchTerm,
-} = require('../validation');
+} = require('../validations');
 
 const { getAll, getById, add, remove, search, edit } = require('../middleware');
 
