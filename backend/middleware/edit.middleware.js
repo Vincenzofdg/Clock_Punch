@@ -5,7 +5,7 @@ const OK = 200;
 
 module.exports = async (req, res) => {
   const { id } = req.params;
-  const { name, age, talk } = req.body;
+  const { name, age } = req.body;
 
   const file = await readFile(FILE, 'utf-8')
     .then((f) => JSON.parse(f));
@@ -16,7 +16,6 @@ module.exports = async (req, res) => {
     ...file[indexFound],
     name,
     age,
-    talk, 
   };
 
   await writeFile(FILE, JSON.stringify(file));

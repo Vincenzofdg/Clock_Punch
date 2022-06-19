@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "restore": "cp seed.default.json seed.json",
+    "dev": "nodemon index.js --ignore 'seed.json'"
   },
   "keywords": [],
   "author": "",

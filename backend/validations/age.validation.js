@@ -2,7 +2,7 @@ const BAD = 400;
 
 const ERROR = [
   { message: 'O campo "age" é obrigatório' },
-  { message: 'A pessoa palestrante deve ser maior de idade' },
+  { message: 'A pessoa pessoa deve ser maior de idade' },
 ];
 
 module.exports = (req, res, next) => {
