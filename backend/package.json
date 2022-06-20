@@ -2,11 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node ./src/index.js",
     "restore": "cp seed.default.json seed.json",
-    "dev": "nodemon index.js --ignore 'seed.json'"
+    "dev": "nodemon ./src/index.js --ignore 'seed.json'"
   },
   "keywords": [],
   "author": "",

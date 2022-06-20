@@ -13,6 +13,13 @@ const fetchAPI = axios.create({
 
 const apiMethod = async (method, endpoint, body) => fetchAPI
   .request({ method, url: endpoint, data: body })
-    .then(({ status, data }) => ({ status, data }));
+  .then(({ status, data }) => ({ status, data }));
+
+/*
+const getPerson = async () => axios.get(`${URL}/person`)
+const postPerson = async (data) => axios.post(`${URL}/person`, data)
+const putPerson = async (id, changes) => axios.put(`${URL}/person/${id}`, changes)
+const deletePerson = async (id) => axios.delete(`${URL}/person/${id}`)
+*/
 
 export default apiMethod;

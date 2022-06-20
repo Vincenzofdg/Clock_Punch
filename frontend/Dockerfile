@@ -1,8 +1,7 @@
 # builder
 FROM node AS build
 WORKDIR /app
-ENV API_URI="http://localhost:3001" \
-    REACT_APP_API_URI=${API_URI}
+ENV REACT_APP_API_URI="http://localhost:3001"
 COPY . .
 RUN npm install && npm run build
 

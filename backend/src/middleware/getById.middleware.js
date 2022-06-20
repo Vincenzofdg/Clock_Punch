@@ -1,6 +1,7 @@
+const path = require('path');
 const { readFile } = require('fs/promises');
 
-const FILE = '../seed.json';
+const FILE = path.resolve(__dirname, '..', 'seed.json');
 const MSG = 'Pessoa palestrante não encontrada';
 const OK = 200;
 const BAD = 404;

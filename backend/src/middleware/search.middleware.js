@@ -1,10 +1,11 @@
+const path = require('path');
 const { readFile } = require('fs/promises');
 
-const FILE = '../seed.json';
+const FILE = path.resolve(__dirname, '..', 'seed.json');
 const OK = 200;
 
 module.exports = async (req, res) => {
-  const { q: search } = req.query;
+  const { q: search = '' } = req.query;
 
   const file = await readFile(FILE, 'utf-8')
     .then((f) => JSON.parse(f));

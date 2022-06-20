@@ -1,6 +1,7 @@
+const path = require('path');
 const { readFile, writeFile } = require('fs/promises');
 
-const FILE = '../seed.json';
+const FILE = path.resolve(__dirname, '..', 'seed.json');
 const NO_CONTENT = 204;
 
 module.exports = async (req, res, _next) => {

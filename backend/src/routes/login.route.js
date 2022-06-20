@@ -1,11 +1,11 @@
 const express = require('express');
 
-const Router = express.Router();
+const loginRoute = express.Router();
 
 const { newLogin } = require('../middleware');
 
-Router
+loginRoute
   .route('/')
-    .post(newLogin);
+  .post(newLogin);
 
-module.exports = Router;
+module.exports = { loginRoute };

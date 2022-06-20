@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "install": "npm i --prefix backend && npm i --prefix frontend",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
     "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
     "dev": "concurrently \"cd backend && npm run dev\"",
     "restore": "concurrently \"cd backend && npm run restore\"",
