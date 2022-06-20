@@ -11,8 +11,8 @@ const fetchAPI = axios.create({
   }
 })
 
-const taskApi = async (method, endpoint, body) => fetchAPI
+const apiMethod = async (method, endpoint, body) => fetchAPI
   .request({ method, url: endpoint, data: body })
     .then(({ status, data }) => ({ status, data }));
 
-export default taskApi;
+export default apiMethod;
