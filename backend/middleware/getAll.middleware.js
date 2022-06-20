@@ -1,7 +1,7 @@
 const { readFile } = require('fs/promises');
 
 const OK = 200;
-const FILE = './seed.json';
+const FILE = '../seed.json';
 
 module.exports = async (_req, res, _next) => {
   const file = await readFile(FILE, 'utf-8');
