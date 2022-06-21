@@ -9,7 +9,7 @@ const myApp = express();
 myApp.use(bodyParser.json());
 myApp.use(cors());
 
-// Rotas em ardem alfabética
+// Rotas em ardem alfabética.
 myApp.use('/login', loginRoute);
 myApp.use('/people', personRoute);
 myApp.get('/', (_res, res) => res.status(200).json({ msg: "Database is on" }));
