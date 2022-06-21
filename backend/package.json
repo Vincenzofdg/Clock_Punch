@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "node ./src/index.js",
-    "restore": "cp seed.default.json seed.json",
+    "restore": "cp seed.default.json src/seed.json",
     "dev": "nodemon ./src/index.js --ignore 'seed.json'"
   },
   "keywords": [],
