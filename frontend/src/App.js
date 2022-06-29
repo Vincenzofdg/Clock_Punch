@@ -1,15 +1,20 @@
-import apiMethod from "./services/api";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AppProvider from './context/Provider'
 
-function App() {
-	const api = apiMethod('GET', '/people').then(i => console.log(i.data))
-	console.log(api);
+// Pages:
+import People from './pages/People';
 
-  // axios.get('http://localhost:3001/').then(i => console.log(i.data));
-
+function App() {  
   return (
-    <>
-      <h1>FRONTEND</h1>
-    </>
+    <AppProvider>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route exact path="/" element={ <People /> } />
+          {/* <Route path="/about" element={ <About /> } /> */}
+        </Routes>
+      </BrowserRouter>
+    </AppProvider>
   );
 }
 
