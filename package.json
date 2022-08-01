@@ -8,7 +8,7 @@
     "backend": "cd backend && npm run dev",
     "frontend": "cd frontend && npm start",
     "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
-    "dev": "concurrently \"cd backend && npm run dev\"",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
     "restore": "concurrently \"cd backend && npm run restore\"",
     "compose": "docker-compose down && docker-compose up"
   },
